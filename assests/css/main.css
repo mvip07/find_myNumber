@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rampart One', cursive;
+}
+
+.modal {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 400px;
+    color: #fff;
+    height: 300px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #3FFF00;
+    border-radius: 50px 0 50px 0;
+    transform: translate(-150%, -150%);
+}
+
+.modal.active {
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+
+.modal__header h3 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.modal__button {
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal__button button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    color: #3FFF00;
+    border-radius: 8px;
+}
+
+.game__choose__number {
+    top: 30px;
+    right: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 16px;
+    position: absolute;
+    border-radius: 8px;
+    background-color: #3FFF00;
+}
+
+.container {
+    width: 500px;
+    display: block;
+    margin: 100px auto;
+}
+
+.container.active {
+    filter: blur(8px);
+}
+
+.game__information p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header__section, .header__section div {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #3FFF00;
+    justify-content: space-around;
+}
+
+.container__body {
+    display: grid;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #3FFF00;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container__body div {
+    padding: 8px;
+    border: 1px solid #3FFF00;
+}
+
+.btn__click {
+    gap: 10px;
+    width: 500px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn__click button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: large;
+    border-radius: 8px;
+    background-color: #3FFF00;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 576px) {
+    .container, .btn__click {
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/css/main.css">
+    <title>Find Number</title>
+
+</head>
+
+<body>
+
+    <div class="modal">
+        <div class="modal__header">
+            <h2>Siz o'ylagan son</h2>
+            <h3 class="put__found">43</h3>
+        </div>
+        <div class="modal__button">
+            <button>Back</button>
+            <button onclick="replay()">Replay</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <select class="game__choose__number">
+            <option>Choose</option>
+            <option value="15">15 Numbers</option>
+            <option value="21">21 Numbers</option>
+            <option value="27">27 Numbers</option>
+        </select>
+        <div class="game__information">
+            <p>Siz shu yerdagi sonlardan birini tanlang va <br/> Qaysi Sectionda ekanligini tugmalar orqali kiriting.</p>
+        </div>
+        <div class="container__header">
+            <div class="header__section">
+                <div>1 Section</div>
+                <div>2 Section</div>
+                <div>3 Section</div>
+            </div>
+        </div>
+        <div class="container__body"></div>
+        <div class="btn__click">
+            <button onclick="btn1()">1 Section</button>
+            <button onclick="btn2()">2 Section</button>
+            <button onclick="btn3()">3 Section</button>
+        </div>
+    </div>
+    
+    <script src="./assests/js/main.js" def></script>
+
+</body>
+</html>
