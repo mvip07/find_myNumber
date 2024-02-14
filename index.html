@@ -3,52 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/css/main.css">
-    <title>Find Number</title>
-
+    <title>Find My Number </title>
+    <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
-
     <div class="modal">
-        <div class="modal__header">
-            <h2>Siz o'ylagan son</h2>
-            <h3 class="put__found">43</h3>
+        <div class="modal_header">
+            <h2>Siz O'ylagan Son</h2>
+            <h3 class="put_found">07</h3>
         </div>
-        <div class="modal__button">
-            <button>Back</button>
+        <div class="modal_body">
             <button onclick="replay()">Replay</button>
         </div>
     </div>
 
-    <div class="container">
-        <select class="game__choose__number">
-            <option>Choose</option>
-            <option value="15">15 Numbers</option>
-            <option value="21">21 Numbers</option>
-            <option value="27">27 Numbers</option>
-        </select>
-        <div class="game__information">
-            <p>Siz shu yerdagi sonlardan birini tanlang va <br/> Qaysi Sectionda ekanligini tugmalar orqali kiriting.</p>
+    <div class="get_blur">
+        <div class="choose_number">
+            <select name="" id="select">
+                <option value="15" selected>15 Number</option>
+                <option value="21">21 Number</option>
+                <option value="27">27 Number</option>
+            </select>
         </div>
-        <div class="container__header">
-            <div class="header__section">
-                <div>1 Section</div>
-                <div>2 Section</div>
-                <div>3 Section</div>
-            </div>
-        </div>
-        <div class="container__body"></div>
-        <div class="btn__click">
-            <button onclick="btn1()">1 Section</button>
-            <button onclick="btn2()">2 Section</button>
-            <button onclick="btn3()">3 Section</button>
-        </div>
-    </div>
     
-    <script src="./assests/js/main.js" def></script>
-
+        <center>
+            <div class="container">
+                <div class="section_table">
+                    <h3>Qaysi Sectionda Ekanligini bosing</h3>
+                    <div class="section_body">
+                        <div>1 Sec</div>
+                        <div>2 Sec</div>
+                        <div>3 Sec</div>
+                    </div>
+                </div>
+                <div class="add_number">
+                    
+                </div>
+                <div class="btn_group">
+                    <button role="button" onclick="btn_click(1, 0, 2, 0)"><span class="text">1</span></button>
+                    <button role="button" onclick="btn_click(2, 1, 0, 1)"><span class="text">2</span></button>
+                    <button role="button" onclick="btn_click(1, 2, 0, 2)"><span class="text">3</span></button>
+                </div>
+            </div>
+        </center>
+    </div>
+    <script src="./assets/js/index.js" defer></script>
 </body>
+
 </html>
